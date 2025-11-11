@@ -1,0 +1,36 @@
+📝 1. feladat: String függvények gyakorlása
+Leírás:
+Hozz létre egy változót, ami a kedvenc filmed címét tartalmazza.
+Készíts egy függvényt, ami:
+nagybetűssé alakítja a címet,
+megszámolja a karakterek számát,
+és kiírja, hogy a cím hány szótagból (szókból) áll.
+A függvény visszaadhatja az összes információt egy tömbben vagy egy szép szövegként.
+Cél: string manipuláció, karakter- és szószámlálás, függvényírás gyakorlása.
+
+
+
+
+📝 2. feladat: Tömb függvények gyakorlása
+Leírás:
+Hozz létre egy tömböt, ami 5-6 kedvenc ételed nevét tartalmazza.
+Készíts egy függvényt, ami:
+visszaadja a tömb hosszát (hány elem van benne),
+hozzáad egy új ételt a tömbhöz,
+rendezi a tömböt ábécé szerint,
+és visszaadja a teljes tömböt.
+Cél: tömbök kezelése, elemek hozzáadása, rendezés, függvények használata tömbökkel.
+
+
+
+
+📝 3. feladat: Általános függvények gyakorlása
+Leírás:
+Készíts egy függvényt, ami két számot kap paraméterként.
+A függvény:
+kiszámolja az összegüket,
+a különbségüket,
+a szorzatukat,
+és visszaadja az összes eredményt egy asszociatív tömbben (pl. ["osszeg" => ..., "kulonbseg" => ..., "szorzat" => ...]).
+Írd ki a függvény visszatérési értékét szépen formázva.
+Cél: paraméterek kezelése, visszatérési értékek, asszociatív tömbök és függvények kombinálása.

@@ -1,0 +1,29 @@
+🧩 1. feladat: Személyi adatok kezelése
+Készíts egy programot, amelyben többféle típusú változót hozol létre egy kitalált személy adataihoz:
+    a neve (szöveg),
+    az életkora (egész szám),
+    a testmagassága (tizedes szám),
+    hogy van-e jogosítványa (logikai érték),
+    és hány testvére van (egész szám).
+A feladat az, hogy minden változót külön hozz létre, majd írd ki az összes adatot egy áttekinthető formában (pl. „Név: …, Életkor: …” stb.).
+Cél: gyakorolni, hogyan kell különböző típusú adatokat eltárolni és kiíratni.
+
+
+
+📊 2. feladat: Egyszerű bevásárlólista
+Képzeld el, hogy készítesz egy kis programot a bevásárláshoz.
+Hozz létre változókat, amelyek tárolják három termék nevét (szöveg) és az árukat (tizedes szám).
+Számold ki a teljes összeget, majd készíts egy új változót, amelyben eltárolod az átlagárat.
+A végén jelenítsd meg a lista tartalmát és a kiszámolt értékeket.
+Cél: gyakorolni a szöveges és numerikus adatok kezelését, valamint a számolást változókkal.
+
+
+
+💰 3. feladat: Fizetés kiszámítása
+Képzeld el, hogy egy dolgozó havi fizetését számolod ki.
+Tárold a dolgozó nevét (szöveg),
+az óránkénti bérét (tizedes szám),
+a ledolgozott órák számát (egész szám),
+valamint egy logikai változót, ami azt jelzi, hogy kap-e bónuszt.
+Ezután számold ki a fizetést (óra × bér), és ha a bónusz igaz, adj hozzá egy meghatározott extra összeget (pl. 10%).
+Cél: logikai érték és számítások kombinálása, változók gyakorlása különböző típusokkal.
