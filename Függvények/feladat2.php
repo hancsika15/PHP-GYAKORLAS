@@ -24,13 +24,13 @@
             $elemekSzama = count($etelek);  //visszaadja a tömb hosszát (hány elem van benne)
             $ujTetel = "Töltött káposzta";
             $etelek[] = $ujTetel;  //hozzáad egy új ételt a tömbhöz
-            $abc = sort($etelek); //rendezi a tömböt ábécé szerint
+            sort($etelek); //rendezi a tömböt ábécé szerint
 
 
             return[
                 "elemekSzama" => $elemekSzama,
                 "ujTetel" => $ujTetel,
-                "abc" => $etelek, //és visszaadja a teljes tömböt.
+                "etelek" => $etelek
             ];
         }
 
@@ -38,7 +38,7 @@
         echo 
         "<p>Elemek száma: " . $kaja["elemekSzama"] . "</p>" . 
         "<p>Új tétel: " . $kaja["ujTetel"] . "</p>". 
-        "<p>Abc sorrend: " .  implode(' , ',$kaja["abc"]) . "</p>";
+        "<p>Abc sorrend: " .  implode(' , ',$kaja["etelek"]) . "</p>";
 
     ?>
 
