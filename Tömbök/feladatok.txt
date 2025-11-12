@@ -1,0 +1,34 @@
+🧩 1. feladat – Tanulók adatai
+Leírás:
+Készíts egy multidimenziós tömböt, ahol minden elem egy tanulót jelöl.
+Minden tanulóhoz tartozzon: név, életkor, és kedvenc tantárgy.
+Írj egy függvényt, ami:
+végigmegy a tanulókon,
+megszámolja, hány tanuló van összesen,
+és kiírja a legidősebb tanuló nevét és korát.
+🎯 Cél: bejárás ciklussal, többdimenziós adatok kezelése, függvényhasználat.
+
+
+
+🍕 2. feladat – Étlap több kategóriával
+Leírás:
+Készíts egy tömböt, ami három kategóriát tartalmaz:
+"Levesek"
+"Főételek"
+"Desszertek"
+Mindegyik kategória tömbként tartalmazzon 2-3 ételt.
+Készíts egy függvényt, ami:
+kiírja az összes ételt kategóriánként,
+megszámolja, hány étel van összesen az étlapon.
+🎯 Cél: tömbök a tömbben, ciklusok egymásban (foreach a foreach-ben).
+
+
+
+🏫 3. feladat – Osztályzatok kezelése
+Leírás:
+Készíts egy multidimenziós tömböt, ahol a kulcs a diák neve,
+az érték pedig egy tömb, ami a jegyeit tartalmazza (pl. [5, 4, 3, 5]).
+Készíts egy függvényt, ami:
+kiszámolja minden tanuló átlagát,
+és visszaadja a legjobb átlagú tanuló nevét és átlagát.
+🎯 Cél: bejárás, számítás, tömbkezelés és asszociatív kulcsok kombinálása.
