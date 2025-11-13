@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1️⃣ rész</title>
+    <title>1️⃣ rész - Ismétlés</title>
     <style>
         table,td,th,tr{
             border: 1px solid black;
@@ -15,180 +15,221 @@
 </head>
 <body>
 
-    <h3>1️⃣ Változók gyakorlása</h3>
-    <?php
+    <section>
+        <h3>1️⃣ Változók gyakorlása</h3>
+        <?php
 
-        $nev = "Hanna";
-        $kor = 19;
-        $magassag = 181;
-        $vanJogositvany = TRUE;
+            $nev = "Hanna";
+            $kor = 19;
+            $magassag = 181;
+            $vanJogositvany = TRUE;
 
-        echo "<p>Nevem " . $nev .", ". $kor ." éves vagyok,". $magassag ."cm magas vagyok, jogosítványom". ($vanJogositvany ? " van" : " nincs")."</p>"
-    ?>
+            echo "<p>Nevem " . $nev .", ". $kor ." éves vagyok,". $magassag ."cm magas vagyok, jogosítványom". ($vanJogositvany ? " van" : " nincs")."</p>"
+        ?>
 
-    <hr>
+        <hr>
+    </section>
+    
+    <section>
+        <h3>2️⃣ Tömbök gyakorlása</h3>
+        <?php
+            $filmek = ["Ready Player One", "Titanic", "Oscar", "A pápa örgödűzője", "A beavatott"];
 
-    <h3>2️⃣ Tömbök gyakorlása</h3>
-    <?php
-        $filmek = ["Ready Player One", "Titanic", "Oscar", "A pápa örgödűzője", "A beavatott"];
 
+            function FilmInfo($filmek){
+                //Filmek megszámolva a tömbben
+                echo "A filmek száma: ". count($filmek);
 
-        function FilmInfo($filmek){
-            //Filmek megszámolva a tömbben
-            echo "A filmek száma: ". count($filmek);
+                //Sorköz
+                echo "<br>";
 
-            //Sorköz
-            echo "<br>";
+                //Új film hozzáadása
+                $ujFilm = "Gyűrűk ura";
+                echo "Az új film: " . $ujFilm;
+                $filmek[] = $ujFilm;
 
-            //Új film hozzáadása
-            $ujFilm = "Gyűrűk ura";
-            echo "Az új film: " . $ujFilm;
-            $filmek[] = $ujFilm;
+                //Sorköz
+                echo "<br>";
 
-            //Sorköz
-            echo "<br>";
+                //Filmek kiírása
+                echo ("A tömbben lévő filmek: ");
+                echo implode(', ', $filmek);
 
-            //Filmek kiírása
-            echo ("A tömbben lévő filmek: ");
-            echo implode(', ', $filmek);
+                //Sorköz
+                echo "<br>";
 
-            //Sorköz
-            echo "<br>";
+                //Filmek kiírása abc sorrendben
+                echo ("A tömbben lévő filmek abc sorrendben: ");
+                sort($filmek);
+                echo implode(', ', $filmek);
+                
+            }
 
-            //Filmek kiírása abc sorrendben
-            echo ("A tömbben lévő filmek abc sorrendben: ");
-            sort($filmek);
-            echo implode(', ', $filmek);
-            
-        }
+            $Info = FilmInfo($filmek);
+        ?>
+        <hr>
+    </section>
 
-        $Info = FilmInfo($filmek);
-    ?>
+    <section>
+        <h3>3️⃣ Függvények gyakorlása</h3>
+        <?php
+            function Szamol($a, $b){
 
-    <hr>
+                $osszeg = $a + $b;
+                $kivonas = $a - $b;
+                $szorzat = $a * $b;
+                $osztas = $a / $b;
 
-    <h3>3️⃣ Függvények gyakorlása</h3>
+                return[
+                    "a" => $a,
+                    "b" => $b,
+                    "osszeg" => $osszeg,
+                    "kivonas" => $kivonas,
+                    "szorzat" => $szorzat,
+                    "osztas" => $osztas
+                ];
+            };
 
-    <?php
-        function Szamol($a, $b){
+            $szam = Szamol(5,7);
+            echo "<p>a: ". $szam["a"] ." b: ". $szam["b"] ."</p>";
+            echo 
+            "<table>
+                <tr>
+                    <th>Összeg</th>
+                    <th>Különbség</th>
+                    <th>Szorzat</th>
+                    <th>Osztás</th>
+                </tr>
+                <tr>
+                    <td>".$szam["a"]."+".$szam["b"]."</td>
+                    <td>".$szam["a"]."-".$szam["b"]."</td>
+                    <td>".$szam["a"]."*".$szam["b"]."</td>
+                    <td>".$szam["a"]."/".$szam["b"]."</td>
+                </tr>
+                <tr>
+                    <th colspan=4>=</th>
+                </tr>
+                <tr>
+                    <td>". $szam["osszeg"] . "</td>
+                    <td>". $szam["kivonas"]."</td>
+                    <td>". $szam["szorzat"]."</td>
+                    <td>". round($szam["osztas"],2)."</td>
+                </tr>
+            </table>";
 
-            $osszeg = $a + $b;
-            $kivonas = $a - $b;
-            $szorzat = $a * $b;
-            $osztas = $a / $b;
+        ?>
+        <hr>
+    </section>
 
-            return[
-                "a" => $a,
-                "b" => $b,
-                "osszeg" => $osszeg,
-                "kivonas" => $kivonas,
-                "szorzat" => $szorzat,
-                "osztas" => $osztas
-            ];
-        };
+    <section>
+        <h3>4️⃣ Összetett gyakorló feladat – Tanulói adatok</h3>
+        <?php
+            $tanulok = array(
+                1 => array(
+                    "nev" => "Hanna",
+                    "kor" => 19,
+                    "jegyek" => array(1,2,4,5)
+                ),    
+                2 => array(
+                    "nev" => "Ákos",
+                    "kor" => 20,
+                    "jegyek" => array(2,4,3,5)
+                ),
+                3 => array(
+                    "nev" => "Bogi",
+                    "kor" => 21,
+                    "jegyek" => array(1,2,3,4)
+                )
+            );
 
-        $szam = Szamol(5,7);
-        echo "<p>a: ". $szam["a"] ." b: ". $szam["b"] ."</p>";
-        echo 
-        "<table>
-            <tr>
-                <th>Összeg</th>
-                <th>Különbség</th>
-                <th>Szorzat</th>
-                <th>Osztás</th>
-            </tr>
-            <tr>
-                <td>".$szam["a"]."+".$szam["b"]."</td>
-                <td>".$szam["a"]."-".$szam["b"]."</td>
-                <td>".$szam["a"]."*".$szam["b"]."</td>
-                <td>".$szam["a"]."/".$szam["b"]."</td>
-            </tr>
-            <tr>
-                <th colspan=4>=</th>
-            </tr>
-            <tr>
-                <td>". $szam["osszeg"] . "</td>
-                <td>". $szam["kivonas"]."</td>
-                <td>". $szam["szorzat"]."</td>
-                <td>". round($szam["osztas"],2)."</td>
-            </tr>
-        </table>";
+            function Tanulo($tanulok){
 
-    ?>
+                //kiírás
+                echo
+                    "<table>
+                        <tr>
+                            <th>Név</th>
+                            <th>Jegyek</th>
+                            <th>Átlag</th>
+                        </tr>";
+                foreach ($tanulok as $t) {
+                    echo
+                        "<tr>
+                            <td>". $t["nev"] . "</td>
+                            <td>". implode(', ', $t["jegyek"]) . "</td>
+                            <td>". array_sum($t["jegyek"])/count($t["jegyek"]) ."</td>
+                        </tr>" ;   
+                };
+                echo "</table>";
 
-    <hr>
+                //Létszám
+                $letszam = count($tanulok);
 
-    <h3>4️⃣ Összetett gyakorló feladat – Tanulói adatok</h3>
+                //Legidősebb
+                $maxKor = 0;
+                $maxNev = "";
+                foreach ($tanulok as $t) {
+                    if ($t["kor"]>$maxKor) {
+                        $maxKor = $t["kor"];
+                        $maxNev = $t["nev"];
+                    }
+                }
 
-    <?php
-        $tanulok = array(
+                return[
+                    "letszam" => $letszam,
+                    "legidosebb" => [
+                        "nev" => $maxNev,
+                        "kor" => $maxKor
+                    ]
+                ];
+            };
+
+            $Info = Tanulo($tanulok);
+
+            echo "<p>Tanulók száma:". $Info["letszam"] ."</p>";
+            echo "<p>Legidősebb tanuló <strong>neve</strong>: ". $Info["legidosebb"]["nev"] ." és a <strong>kora</strong>:".$Info["legidosebb"]["kor"]  ."</p>"
+        ?>
+        <hr>
+    </section>
+
+    <section>
+        <h3>5️⃣ Feladat – Dolgozói bérlista</h3>
+
+        <?php 
+
+        $dolgozok = array(
             1 => array(
-                "nev" => "Hanna",
-                "kor" => 19,
-                "jegyek" => array(1,2,4,5)
-            ),    
-            2 => array(
-                "nev" => "Ákos",
-                "kor" => 20,
-                "jegyek" => array(2,4,3,5)
+                "nev" => "Keresztúri Hanna",
+                "oraBer" => 2050,
+                "munkaNapok" => [1,1,1,1,0,0,0,0,1,1,1,1] //8 ledolgozott nap
             ),
-            3 => array(
-                "nev" => "Bogi",
-                "kor" => 21,
-                "jegyek" => array(1,2,3,4)
+            2 => array(
+                "nev" => "Naszály Klára",
+                "oraBer" => 3500,
+                "munkaNapok" => [1,1,1,1,0,0,0,0,0,0,0,0] //4 ledolgozott nap
             )
         );
 
-        function Tanulo($tanulok){
-
-            //kiírás
-            echo
-                "<table>
-                    <tr>
-                        <th>Név</th>
-                        <th>Jegyek</th>
-                        <th>Átlag</th>
-                    </tr>";
-            foreach ($tanulok as $t) {
-                echo
-                    "<tr>
-                        <td>". $t["nev"] . "</td>
-                        <td>". implode(', ', $t["jegyek"]) . "</td>
-                        <td>". array_sum($t["jegyek"])/count($t["jegyek"]) ."</td>
-                    </tr>" ;   
-            };
-            echo "</table>";
-
-            //Létszám
-            $letszam = count($tanulok);
-
-            //Legidősebb
-            $maxKor = 0;
-            $maxNev = "";
-            foreach ($tanulok as $t) {
-                if ($t["kor"]>$maxKor) {
-                    $maxKor = $t["kor"];
-                    $maxNev = $t["nev"];
-                }
+        function Munka($dolgozok){
+            echo "
+            <table>
+                <tr>
+                    <th>Név</th>
+                    <th>Ledolgozott napok</th>
+                    <th>Fizetés</th>
+                </tr>";
+            foreach ($dolgozok as $d) {
+                echo 
+                "<tr>
+                    <td>". $d["nev"] ."</td>
+                    <td>".array_sum($d["munkaNapok"])."</td>
+                    <td>".number_format(($d["oraBer"]*8)* array_sum($d["munkaNapok"]),2,'.',' ') ." Ft</td>
+                </tr>";
             }
-
-            return[
-                "letszam" => $letszam,
-                "legidosebb" => [
-                    "nev" => $maxNev,
-                    "kor" => $maxKor
-                ]
-            ];
-        };
-
-        $Info = Tanulo($tanulok);
-
-        echo "<p>Tanulók száma:". $Info["letszam"] ."</p>";
-        echo "<p>Legidősebb tanuló <strong>neve</strong>: ". $Info["legidosebb"]["nev"] ." és a <strong>kora</strong>:".$Info["legidosebb"]["kor"]  ."</p>"
-    ?>
-
-
-    
-    
+            echo "</table>";
+        }
+        $Info = Munka($dolgozok);
+        ?>
+    </section>
 </body>
 </html>
