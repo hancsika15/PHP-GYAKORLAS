@@ -20,26 +20,33 @@
     </p>
 
     <?php
+        // Többdimenziós tömb az étlaphoz
         $etlap = array(
-            "levesek" => ["Borsókrém leves", "Csontleves", "Sütőtök leves"],
-            "foetelek" => ["Rántotthús", "Rántott sajt", "Grill csirke"] ,
-            "desszertek" => ["Palacsinta", "Goffri", "Fánk"]
+            "levesek" => 
+                ["Borsókrém leves", "Csontleves", "Sütőtök leves"],
+            "foetelek" => 
+                ["Rántotthús", "Rántott sajt", "Grill csirke"],
+            "desszertek" => 
+                ["Palacsinta", "Goffri", "Fánk"]
         );
 
-        function etel($etlap){
+        function etel($etlap) {
+            $osszes = 0;
 
-            return[
-                "levesek" => $levesek,
-                "foetelek" => $foetelek,
-                "desszertek" => $desszertek
-            ];
+            // Bejárjuk kategóriánként a tömböt
+            foreach ($etlap as $kategoriNev => $etelek) {
+                echo "<h2>" . ucfirst($kategoriNev) . ":</h2>";
+                echo implode(", ", $etelek) . "<br>";
+                $osszes += count($etelek);
+            }
+
+            return ["osszes" => $osszes];
         }
 
+        // Függvény meghívása
         $etelInfo = etel($etlap);
 
-        echo implode("," , $etelInfo["levesek"]);
-
-
+        echo "<p><strong>Összes étel:</strong> " . $etelInfo["osszes"] . "</p>";
     ?>
 </body>
 </html>
