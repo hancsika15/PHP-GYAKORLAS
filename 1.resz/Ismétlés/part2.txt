@@ -1,0 +1,18 @@
+5️⃣ Feladat – Dolgozói bérlista
+Leírás:
+Hozz létre egy tömböt, ami 4-5 dolgozót tartalmaz.
+Minden dolgozó asszociatív tömb legyen, a következőkkel:
+nev → dolgozó neve
+alapBer → alapbér (egész szám)
+munkNapok → ledolgozott napok száma (tömb a hónap minden napjára, pl. 1 vagy 0, ha jelen volt-e)
+
+Függvény feladata:
+Kiszámolja az összes ledolgozott napot minden dolgozónál.
+Kiszámolja a fizetést: alapbér / 30 * ledolgozott napok
+Kerekítse a fizetést 2 tizedesre.
+Visszaad egy asszociatív tömböt a dolgozókról: név és fizetés.
+Írj ki egy táblázatot: Név | Ledolgozott napok | fizetés
+
+Extra kihívás:
+Használj implode()-ot a napok kiírásához, ha szeretnéd látni, mely napokon dolgozott a dolgozó.
+Ha akarsz, a fizetés mellé írd ki a "bruttó" vagy "nettó" feliratot is string manipulációval.
