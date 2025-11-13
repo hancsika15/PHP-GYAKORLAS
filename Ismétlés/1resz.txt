@@ -1,0 +1,57 @@
+1️⃣ Változók gyakorlása
+Feladat:
+Hozz létre változókat:
+$nev → a neved
+$kor → a korod
+$magassag → testmagasságod cm-ben
+$vanJogositvany → igaz/hamis (true/false)
+Írj egy PHP kódot, ami kiírja ezeket szép szövegként:
+"Nevem Hanna, 19 éves vagyok, 181 cm magas, jogosítványom van."
+Használj if feltételt a jogosítványhoz, hogy ha van, írja ki “van”, ha nincs, “nincs”.
+
+
+2️⃣ Tömbök gyakorlása
+Feladat:
+Hozz létre egy tömböt 5-6 kedvenc filmed címeivel.
+Írj egy függvényt, ami:
+visszaadja a tömb hosszát
+hozzáad egy új filmet a tömbhöz
+visszaadja a rendezett tömböt ábécé sorrendben
+Írd ki szépen a filmeket listaként.
+Extra: próbáld meg használni az implode() függvényt a lista kiírásához.
+
+
+3️⃣ Függvények gyakorlása
+Feladat:
+Készíts egy függvényt, ami két számot kap paraméterként.
+A függvény számolja ki:
+összegüket
+különbségüket
+szorzatukat
+A függvény adjon vissza egy asszociatív tömböt az eredményekkel:
+["osszeg" => ..., "kulonbseg" => ..., "szorzat" => ...]
+Írd ki a visszatérő tömb értékeit szép táblázatként.
+
+
+4️⃣ Összetett gyakorló feladat – Tanulói adatok
+Leírás:
+Hozz létre egy tömböt, ami 3-4 tanulót tartalmaz.
+Minden tanuló egy asszociatív tömb, ami a következőket tartalmazza:
+nev → tanuló neve
+kor → tanuló kora
+jegyek → tömb az utolsó 3-5 jegyükkel
+
+Függvény feladata:
+Írj egy függvényt, ami paraméterként kapja a tanulók tömbjét.
+A függvény:
+Kiírja minden tanuló nevét és jegyeit (implode() használatával).
+Megszámolja, hány tanuló van összesen.
+Megkeresi a legidősebb tanulót, és kiírja a nevét és korát.
+Visszaad egy asszociatív tömböt az összesített adatokkal:
+[
+  "letszam" => ..., 
+  "legidosebb" => ["nev" => ..., "kor" => ...]
+]
+Extra:
+Próbáld a foreach-t beágyazni (egyik a tanulókhoz, egy másik a jegyekhez).
+Így gyakorolod a tömbök, asszociatív tömbök és függvények kombinációját egyszerre.
