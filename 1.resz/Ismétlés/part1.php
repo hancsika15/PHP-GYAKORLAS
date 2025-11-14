@@ -215,7 +215,8 @@
             <table>
                 <tr>
                     <th>Név</th>
-                    <th>Ledolgozott napok</th>
+                    <th>Ledolgozott napok (8 órás)</th>
+                    <th>Alapbér</th>
                     <th>Fizetés</th>
                 </tr>";
             foreach ($dolgozok as $d) {
@@ -223,12 +224,94 @@
                 "<tr>
                     <td>". $d["nev"] ."</td>
                     <td>".array_sum($d["munkaNapok"])."</td>
+                    <td>".$d["oraBer"] ." Ft</td>
                     <td>".number_format(($d["oraBer"]*8)* array_sum($d["munkaNapok"]),2,'.',' ') ." Ft</td>
                 </tr>";
             }
             echo "</table>";
         }
         $Info = Munka($dolgozok);
+        ?>
+
+        <hr>
+    </section>
+
+    <section>
+        <h3>6️⃣Feladatleírás – 6. Többdimenziós tömb + függvény gyakorlás</h3>
+        <p>Készíts egy tömböt, amely több dolgozó havi teljesítményét tárolja.
+        Minden dolgozó adatai:
+        nev – dolgozó neve
+        oraBer – órabér
+        munkaOra – egy tömb, amely egy hónap 4 hetének ledolgozott óráit tartalmazza
+        (tehát pl. [40, 32, 28, 30])
+        Feladatod:
+        Írj egy függvényt, amely:
+        Kiírja minden dolgozó:
+        nevét
+        heti óráit
+        a hónap összes ledolgozott óráját
+        a havi fizetését (összes óra × órabér)
+
+        Kiszámolja:
+        a cég összesen hány munkaórát dolgozott a hónapban
+        melyik dolgozó dolgozta a legtöbb órát
+        A függvény visszatér egy asszociatív tömbbel:
+        osszesOra → teljes havi cégösszesítés
+        legszorgalmasabb → a legtöbbet dolgozó neve és óra száma</p>
+
+        <?php
+            $dolgozok = array(
+                1 => array(
+                    "nev" => "Hanna",
+                    "oraBer" => 2050,
+                    "munkaOra" => array(
+                        0 => 40,
+                        1 => 32,
+                        2 => 28,
+                        3 => 30
+                    )
+                ),
+                2 => array(
+                    "nev" => "Henrik",
+                    "oraBer" => 2050,
+                    "munkaOra" => array(
+                        0 => 5,
+                        1 => 32,
+                        2 => 28,
+                        3 => 30
+                    )
+                )
+            );
+
+
+            function Dolgozo($dolgozok){
+
+                echo "
+                <table>
+                        <tr>
+                            <th>Név</th>
+                            <th>Órabér</th>
+                            <th>Heti órák</th>
+                            <th>Ledolgozott órák</th>
+                            <th>Havi fizetés</th>
+                        </tr>";
+
+                foreach ($dolgozok as $d) {
+                    echo "
+                        <tr>
+                            <td>".$d["nev"]."</td>
+                            <td>".$d["oraBer"]."</td>
+                            <td>". implode(' ; ', $d["munkaOra"])."</td>
+                            <td>". array_sum($d["munkaOra"])."</td>
+                            <td>". number_format(array_sum($d["munkaOra"]) * $d["oraBer"],0,"."," ") ." Ft</td>
+                        </tr>"
+                    ;
+                }
+                echo "</table>";
+                
+            };
+
+            $Info = Dolgozo($dolgozok);
         ?>
     </section>
 </body>

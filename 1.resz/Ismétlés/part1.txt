@@ -75,3 +75,30 @@ Visszaad egy asszociatív tömböt a dolgozókról: név és fizetés.
 Extra kihívás:
 Használj implode()-ot a napok kiírásához, ha szeretnéd látni, mely napokon dolgozott a dolgozó.
 Ha akarsz, a fizetés mellé írd ki a "bruttó" vagy "nettó" feliratot is string manipulációval.
+
+
+6️⃣Feladatleírás – 6. Többdimenziós tömb + függvény gyakorlás
+Készíts egy tömböt, amely több dolgozó havi teljesítményét tárolja.
+Minden dolgozó adatai:
+nev – dolgozó neve
+oraBer – órabér
+munkaOra – egy tömb, amely egy hónap 4 hetének ledolgozott óráit tartalmazza
+(tehát pl. [40, 32, 28, 30])
+Feladatod:
+Írj egy függvényt, amely:
+Kiírja minden dolgozó:
+nevét
+heti óráit
+a hónap összes ledolgozott óráját
+a havi fizetését (összes óra × órabér)
+
+Kiszámolja:
+a cég összesen hány munkaórát dolgozott a hónapban
+melyik dolgozó dolgozta a legtöbb órát
+A függvény visszatér egy asszociatív tömbbel:
+osszesOra → teljes havi cégösszesítés
+legszorgalmasabb → a legtöbbet dolgozó neve és óra száma
+
+
+
+7️⃣8️⃣9️⃣🔟
