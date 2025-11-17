@@ -1,0 +1,67 @@
+🔥 Következő tanulócsomag (2. rész)
+Téma: tömbműveletek + alap saját függvények + minimális gondolkodós logika
+
+
+1) Asszociatív tömbök gyakorlása
+Készíts egy feladatot, ahol van egy terméklista, ilyen infókkal egy-egy elemben:
+név
+ár
+kategória
+raktárkészlet
+Feladatleírások:
+Tárold el min. 5 termék adatait asszociatív tömbként (egy nagy tömbben több kisebb asszociatív tömb).
+Készíts műveleteket:
+Számold ki, hány termék van összesen.
+Listázd ki (logikailag) csak a „ruha” kategóriát.
+Derítsd ki, van-e olyan termék, aminek a neve tartalmazza a „Pro” szót.
+Ellenőrizd, hogy minden terméknek nagyobb-e a raktárkészlete 0-nál.
+Ez mind tökéletes alap lesz a tömbfüggvények gyakorlásához.
+
+
+2) Multi-dimenziós tömb + egyszerű logika
+Képzelj el egy osztály naplót, ahol minden diákhoz tartozik 3 jegy:
+név
+jegyek → tömb
+életkor
+Feladatok:
+Készíts el minimum 3 diákot multi-dimenziós struktúrában.
+Feladatok:
+Számold ki minden diák átlagát.
+Találd meg, melyik diák kapta a legmagasabb jegyet.
+Készíts egy listát azokról, akik 4 fölötti átlagot értek el.
+Számold ki a csoport átlagát.
+Itt már simán fogsz tanulni cikluslogikát a tömbök között, de még baráti szinten.
+
+
+3) Egyszerű saját függvények gyakorlása (paraméter + visszatérési érték)
+Csak gondolatban, nem kóddal.
+Feladat:
+Hozz létre 3 különböző feladatot, ahol saját függvényt használnál:
+Egy függvény, ami kap egy árat és visszaadja a 27% áfás árat
+→ Használj paramétert és visszatérési értéket.
+Függvény, ami megkap egy nevet, és egy random köszönést küld vissza
+Például: „Szia Márk, remélem jó napod lesz!” — de legyen mindig más.
+Függvény, ami kap egy számot és eldönti róla, hogy páros vagy páratlan
+→ Ez szuper egyszerű, de fontos lépcső.
+
+
+4) Tömb + saját függvény combo
+Képzeld el, hogy van egy számlista: 12, 7, 30, 44, 3, 19...
+Feladat:
+Hozz létre (csak feladatleírásban!) 2 db saját függvényt:
+ami kiszámolja a tömb átlagát
+ami visszaad egy új tömböt, amiben csak a 10 feletti számok vannak
+A feladatban írd le, hogy mikor hívod meg őket és mire használod az eredményt.
+
+
+5) Superglobálisok – nagyon light rávezetés (még nem használjuk őket élesben)
+Itt még NINCS kód, csak képzelőfeladat.
+Feladat:
+Írj 3 példát arra, milyen helyzetben használna egy weboldal:
+$_GET-et
+$_POST-ot
+$_COOKIE-t
+Csak életszerű szöveges leírás legyen:
+pl. „Belépés gomb megnyomásakor a jelszót POST-ban küldi”
+„Termékek szűrése GET paraméterből”
+Semmi programozás, csak gondolkodás a működésükről.
