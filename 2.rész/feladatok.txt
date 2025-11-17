@@ -34,7 +34,6 @@ Itt már simán fogsz tanulni cikluslogikát a tömbök között, de még barát
 
 
 3) Egyszerű saját függvények gyakorlása (paraméter + visszatérési érték)
-Csak gondolatban, nem kóddal.
 Feladat:
 Hozz létre 3 különböző feladatot, ahol saját függvényt használnál:
 Egy függvény, ami kap egy árat és visszaadja a 27% áfás árat
@@ -42,7 +41,6 @@ Egy függvény, ami kap egy árat és visszaadja a 27% áfás árat
 Függvény, ami megkap egy nevet, és egy random köszönést küld vissza
 Például: „Szia Márk, remélem jó napod lesz!” — de legyen mindig más.
 Függvény, ami kap egy számot és eldönti róla, hogy páros vagy páratlan
-→ Ez szuper egyszerű, de fontos lépcső.
 
 
 4) Tömb + saját függvény combo
