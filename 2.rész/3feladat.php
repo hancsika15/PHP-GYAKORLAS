@@ -61,8 +61,7 @@
 
             $nev = $_POST['nev'];
             $UdvozlesInfo = Udvozles($nev);
-            echo $UdvozlesInfo;
-      
+            echo $UdvozlesInfo;   
         } 
     ?>
 
