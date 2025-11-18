@@ -11,9 +11,8 @@
     Hozz létre 3 különböző feladatot, ahol saját függvényt használnál:<br>
     1. Egy függvény, ami kap egy árat és visszaadja a 27% áfás árat
     → Használj paramétert és visszatérési értéket.<br>
-    2. Függvény, ami megkap egy nevet, és egy random köszönést küld vissza<br>
-    3. Például: „Szia Márk, remélem jó napod lesz!” — de legyen mindig más.<br>
-    Függvény, ami kap egy számot és eldönti róla, hogy páros vagy páratlan</p>
+    2. Például: „Szia Márk, remélem jó napod lesz!” — de legyen mindig más.<br>
+    3. Függvény, ami kap egy számot és eldönti róla, hogy páros vagy páratlan</p>
 
 <hr>
     <form method="POST">
@@ -62,6 +61,34 @@
             $nev = $_POST['nev'];
             $UdvozlesInfo = Udvozles($nev);
             echo $UdvozlesInfo;   
+        } 
+    ?>
+<hr>
+
+    <form method="POST">
+        <legend>
+            <label for="szam">Szám:</label>
+            <input type="number" name="szam" required>
+        </legend>
+        <br>
+        <button type="submit">Küldes</button>
+    </form>
+
+    <?php
+
+        function ParosParatlan($a){
+
+            if ($a % 2 == 0) {
+                return "Páros";
+            }
+            else return "Páratlan";
+        }
+
+        if (isset($_POST['szam']) && $_POST['szam'] !== '') {
+
+            $szam = $_POST['szam'];
+            $PvP = ParosParatlan($szam);
+            echo $PvP;   
         } 
     ?>
 
