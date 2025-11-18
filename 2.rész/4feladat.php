@@ -17,8 +17,30 @@
     </p>
 
     <?php
-        $szamok = array(12, 7, 30, 44, 3, 19, 21, 26, 40); //
+        function Atlag($szamok){
+            return array_sum($szamok)/count($szamok);
+        }
+
+        
+        function Vissza($szamok){   
+            $tiz = [];     
+            for ($i=0; $i < Count($szamok) ; $i++) { 
+               if ($szamok[$i] > 10) {
+                $tiz[]  = $szamok[$i];
+               }
+            }  
+            
+            return $tiz;
+        }
+
+
+        $szamok = array(12, 7, 30, 44, 3, 19, 21, 26, 40); // 202 / 9 = 22,44
+        $AtlagInfo = Atlag($szamok);
+        $VisszaInfo = Vissza($szamok);
+        echo round($AtlagInfo,2) . "<br>";
+        sort($VisszaInfo); // helyben rendezi
+        echo implode(',', $VisszaInfo);
     ?>
     
-</body>
+</body> 
 </html>
