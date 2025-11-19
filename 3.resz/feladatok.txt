@@ -1,0 +1,34 @@
+3.  gyakorló feladatcsomag – PHP tömbök, függvények és fájlkezelés
+
+1)  Tömbkezelés – Dolgozók bérszámítás 2.0 Feladat:
+
+-   Asszociatív tömb dolgozókkal: név, órabér, heti órák.
+-   Függvény heti és havi bér kiszámítására.
+-   HTML táblázat: név, heti órák, heti bér, havi bér.
+-   Ha van 0 munkaóra, figyelmeztetés.
+
+2)  Fájlfeltöltés + fájlkezelés – Profilkép mentése Feladat:
+
+-   JPG/PNG feltöltés.
+-   uploads/ könyvtárba mentés.
+-   MIME ellenőrzés, hibaellenőrzés.
+-   Siker esetén megjelenítés.
+
+3)  Stringkezelés – Regisztráció ellenőrző rendszer Feladat:
+
+-   Név: nem üres, csak betű/szóköz.
+-   Email ellenőrzés filter_var().
+-   Jelszó: min 8 karakter, szám, nagybetű.
+-   Mentés users.txt fájlba JSON soronként.
+
+4)  JSON feldolgozás – Terméklista Feladat:
+
+-   products.json betöltése és megjelenítése.
+-   Gomb: ÁFÁ-s árak (27%) megjelenítése.
+
+5)  Mini API – Egyszerű REST-like működés Feladat:
+
+-   GET /products → JSON lista.
+-   POST /products → új termék hozzáadása.
+-   DELETE /products/{id} → törlés.
+ 
