@@ -50,16 +50,3 @@ Hozz létre (csak feladatleírásban!) 2 db saját függvényt:
 ami kiszámolja a tömb átlagát
 ami visszaad egy új tömböt, amiben csak a 10 feletti számok vannak
 A feladatban írd le, hogy mikor hívod meg őket és mire használod az eredményt.
-
-
-5) Superglobálisok – nagyon light rávezetés (még nem használjuk őket élesben)
-Itt még NINCS kód, csak képzelőfeladat.
-Feladat:
-Írj 3 példát arra, milyen helyzetben használna egy weboldal:
-$_GET-et
-$_POST-ot
-$_COOKIE-t
-Csak életszerű szöveges leírás legyen:
-pl. „Belépés gomb megnyomásakor a jelszót POST-ban küldi”
-„Termékek szűrése GET paraméterből”
-Semmi programozás, csak gondolkodás a működésükről.
