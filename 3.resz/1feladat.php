@@ -87,7 +87,7 @@
                 ]
             );
 
-            function HetiBerek($dolgozok)
+            function Berek($dolgozok)
             {
                 echo "<table>
                     <tr>
@@ -121,7 +121,7 @@
                 echo "</table>";
             }
 
-            $Info = HetiBerek($dolgozok);
+            $Info = Berek($dolgozok);
             ?>
         </div>
     </div>
