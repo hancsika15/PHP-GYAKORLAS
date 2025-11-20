@@ -4,7 +4,7 @@
 
 -   Asszociatív tömb dolgozókkal: név, órabér, heti órák.
 -   Függvény heti és havi bér kiszámítására.
--   HTML táblázat: név, heti órák, heti bér, havi bér.
+-   HTML táblázat: név, heti órák, havi bér.
 -   Ha van 0 munkaóra, figyelmeztetés.
 
 2)  Fájlfeltöltés + fájlkezelés – Profilkép mentése Feladat:
